@@ -1,137 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<header> <!--links to other pages-->
-    <div class = "header-left">
-        <p class="slogan">IDEAS.INNOVATION.IMPACT</p>
-    </div>
 
-    <nav class="header-center">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            
-        </ul>
-    </nav>
+<head>
+    <meta charset="utf-8"> <meta name="viewport">
+    <title>homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <div class="header-right">
-        <ul>
-            <li><a href="#">Subscribe</a></li>
-            <li><a href="contact.html">Work with me</a></li>
-        </ul>
-    </div>
-</header>
 <body>
-<section class="hero">
-    
+    <div class="main-wrapper"></div>
+    <header> <!--links to other pages-->
+        <div class="header-left">
+            <p class="slogan">IDEAS.INNOVATION.IMPACT</p>
+        </div>
 
-    <!--Introduction-->
-    <h1>Hello, I'm Gladstone</h1>
+        <nav class="header-center">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
 
-    <!--supporting text-->
-    <p>I use research and data to help organizations design and implement innovative solutions</p>
-     <!-- about me link-->
-      <a href="About.html">About Me</a>
-    <!--Large introduction image -->
-    <div class="hero-image">
-        <img src="blah blah" alt="A picture of mr gladstone" />
-    </div>
-</section>
+            </ul>
+        </nav>
 
-<!--services-->
-<section>
+        <div class="header-right">
+            <ul>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="contact.html">Work with me</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+
+
+        <!--Introduction-->
+        <h1>Hello, I'm Gladstone</h1>
+
+        <!--supporting text-->
+        <p>I use research and data to help organizations design and implement innovative solutions</p>
+        <!-- about me link-->
+        <a href="About.html">About Me</a>
+        <!--Large introduction image -->
+        <div class="hero-image">
+            <img src="hero-image1.jpg" alt="A picture of mr gladstone" />
+        </div>
+    </section>
+
+    <!--services-->
+    <section>
         <div class="hero-badge">Services</div>
 
-    <!--expertise and experience-->
-    <p class="expertise-text"> Expertise and Experience in</p>
+        <!--expertise and experience-->
+        <p class="expertise-text"> Expertise and Experience in</p>
 
-    <!--three major areas-->
-    <div class="major-container">
-        <div class="major-item">
-            <h3>Program Design and Evaluation</h3>
-        </div>
-        <div class="major-item">
-            <h3>Strategic Planning</h3>
-        </div>
-        <div class="major-item">
-            <h3>Applied Research</h3>
-        </div>
-    </div>
-</section>
-
-<!--approach carousel on the homepage -->
-<section class="approach-section">
-    <div class="hero-badge">Approach</div>
-    <p class="approach-text"> My Approach</p>
-
-    <div class="approach carousel">
-        <button class="carousel-arrow"> < </button>
-
-        <div class=" active-carousel-slides">
-            <!--slide 1 = client focused approach-->
-            <div class="carousel-slide">
-                <div class="slide-content">
-                    <h3>Client-Focused Approach</h3>
-                
-                    <a href="approach.html" class="read-more-link"> Read More</a>
-                </div>
+        <!--three major areas-->
+        <div class="major-container">
+            <div class="major-item">
+                <h3>Program Design and Evaluation</h3>
             </div>
-
-            <!--slide 2 = Collaborative engagement-->
-            <div class="carousel-slide">
-                <div class="slide-content">
-                    <h3>Emphasizing Collaborative Engagement</h3>
-                    
-                    <a href="approach.html" class="read-more-link"> Read More</a>
-                </div>
+            <div class="major-item">
+                <h3>Strategic Planning</h3>
             </div>
-
-            <!--slide 3 = Delivering Actionable and Impactful solutions-->
-            <div class="carousel-slide">
-                <div class="slide-content">
-                    <h3>Delivering Actionable and Impactful Solutions</h3>
-                    
-                    <a href="approach.html" class="read-more-link"> Read More</a>
-                </div>
-            </div>
-
-            <!--slide 4 = A commitment to excellence and continuous Improvement -->
-            <div class="carousel-slide">
-                <div class="slide-content">
-                    <h3>A commitment to Excellence and Continuous Improvement</h3>
-                    
-                    <a href="approach.html" class="read-more-link"> Read More</a>
-                </div>
+            <div class="major-item">
+                <h3>Applied Research</h3>
             </div>
         </div>
+    </section>
 
-        <button class=" carousel-arrow"> > </button>
-    </div>
-    <!--carousel indicators that show which slide you are on-->
-    <div class="carousel-indicators">
-        <button class="indicator " data-index="0"></button>
-         <button class="indicator " data-index="1"></button>
-          <button class="indicator " data-index="2"></button>
-           <button class="indicator " data-index="3"></button>
+    <!--approach carousel on the homepage -->
+    <section class="approach-section">
+        <div class="hero-badge">Approach</div>
+        <p class="approach-text"> My Approach</p>
 
-    </div>
+        <div class="approach-carousel">
+            <button class="carousel-arrow">
+                < </button>
 
-</section>
-<!--blogs section-->
-<section class="blogs-preview">
-    <h2>Latest blogs</h2>
-    <!--blog post 1-->
-    <article class="blog-post">
-        <a href="blog-post1.html">
-            <img src="#", alt="Transforming secondary education in Ghana">
-            <h3>Transforming Secondary Education in Ghana - Rethinking SHS for sustainable Impact</h3>
-            <p>Gladstone Deklu, PhD</p>
-            <p>2/3/2025 . 3 min read</p>
-        </a>
-    </article>
-    <!--see more link-->
-    <div class="see-more">
-        <a href="blogs.html">See More ></a>
+                    <div class="active-carousel-slides">
+                        <!--slide 1 = client focused approach-->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Client-Focused Approach</h3>
+
+                                <a href="approach.html" class="read-more-link"> Read More</a>
+                            </div>
+                        </div>
+
+                        <!--slide 2 = Collaborative engagement-->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Emphasizing Collaborative Engagement</h3>
+
+                                <a href="approach.html" class="read-more-link"> Read More</a>
+                            </div>
+                        </div>
+
+                        <!--slide 3 = Delivering Actionable and Impactful solutions-->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>Delivering Actionable and Impactful Solutions</h3>
+
+                                <a href="approach.html" class="read-more-link"> Read More</a>
+                            </div>
+                        </div>
+
+                        <!--slide 4 = A commitment to excellence and continuous Improvement -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <h3>A commitment to Excellence and Continuous Improvement</h3>
+
+                                <a href="approach.html" class="read-more-link"> Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow"> > </button>
+        </div>
+        <!--carousel indicators that show which slide you are on-->
+        <div class="carousel-indicators">
+            <button class="indicator " data-index="0"></button>
+            <button class="indicator " data-index="1"></button>
+            <button class="indicator " data-index="2"></button>
+            <button class="indicator " data-index="3"></button>
+
+        </div>
+
+    </section>
+    <!--blogs section-->
+    <section class="blogs-preview">
+        <h2>Latest blogs</h2>
+        <!--blog post 1-->
+        <article class="blog-post">
+            <a href="blog-post1.html">
+                <img src="idk.jpg" alt="Transforming secondary education in Ghana">
+                <h3>Transforming Secondary Education in Ghana - Rethinking SHS for sustainable Impact</h3>
+                <p>Gladstone Deklu, PhD</p>
+                <p>2/3/2025 . 3 min read</p>
+            </a>
+        </article>
+        <!--see more link-->
+        <div class="see-more">
+            <a href="blogs.html">See More ></a>
+        </div>
+    </section>
+    <!--footer added to every page-->
+    <footer class="site-footer">
+        <!-- social media -->
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="#" alt="LinkedIn"> <!--linkedin profile-->
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="#" alt="Facebook"> <!--facebook profile-->
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="#" alt="Twitter"> <!--twitter profile-->
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="#" alt="Instagram"> <!--instagram profile-->
+            </a>
+            <a href="About.html">About Me</a> <!--about me-->
+            <a href="resume.html">Resume</a> <!--resume-->
+        </div>
+        <!--copyright and contact section-->
+        <div class="footer-bottom">
+            <p>Gladstone Deklu,PhD</p>
+            <p>Management Consulting | Applied Research</p>
+            <p>© 2025. All rights reserved.</p>
+            <h3> Subscibe to stay updated</h3>
+        </div>
+    </footer>
     </div>
-</section>
 </body>
+
 </html>
