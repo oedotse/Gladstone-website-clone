@@ -17,6 +17,8 @@ html {
 /* Beige background for whole page */
 body {
   background-color: #f1e7d0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Content wrapper - white card */
@@ -29,3 +31,216 @@ body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06); /* subtle shadow */
   padding: 40px 60px; /* inside spacing */
 }
+ /* css for the headers on each page */
+ header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  bottom: 1px solid #ddd;
+ }
+
+ /* left slogan*/
+ .header-left{
+  flex: 1;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+ }
+ /* center header*/
+ .header-center{
+  flex: 1;
+  text-align: center;
+ }
+
+ .header-center ul{
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+ }
+
+ .header-center ul li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+ }
+
+ .header-center ul li a:hover {
+  color: #f68b1e;
+ }
+
+ /* right links*/
+ .header-right {
+  flex: 1;
+  text-align:right;
+ }
+
+ .header-right ul{
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+  padding:0;
+  margin: 0;
+ }
+
+ .header-right ul li a{
+  text-decoration: none;
+  color:#f68b1e;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s ease;
+ }
+
+ /*work with me */
+ .header-right ul li:last-child a {
+  padding: 8px 15px;
+  border-radius: 15px;
+  background-color: #f68b1e;
+  color:white;
+  text-decoration:none;
+  font-weight: 600;
+  border-radius: 25px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+ }
+
+ .header-right ul li:last-child a:hover{
+  background-color: #f68b1e;
+  color:#ffffff;
+  cursor: pointer;
+ }
+
+ /* footer design */
+ .site-footer{
+  background-color: #f1e7d0;
+  padding: 40px 20px 60px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Helvetica Neue' Helvetica, Arial, sans-serif;
+  color:#575757;
+  text-align: center;
+  margin-top: 60px;
+  box-shadow: none;
+  border-radius:0;
+ }
+
+ .social-links{
+  margin-bottom: 25px;
+ }
+
+ .social-links a{
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+ }
+
+ .social-links a:hover{
+  opacity: 0.7;
+ }
+
+ .social-links img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border:none;
+  background: transparent;
+ }
+
+ .social-links a:not(:first-child) {
+  margin-left: 15px;
+ }
+
+ /* text links*/
+ .social-links a[href*="html"] {
+  display: inline-block;
+  margin-top: 20px;
+  color:#f68b1e;
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 0.9rem;
+ }
+
+ .social-links a[href*="html"]:hover{
+  color:#d6761a
+ }
+
+ .footer-bottom p {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #575757;
+ }
+
+ .footer-bottom h3{
+  font-weight:bold;
+  color:#1a1a1a;
+  margin-top: 15px;
+ }
+
+ /* designing the hero image and the home page*/
+ .hero-section{
+  display: flex;
+  background-color: #fffbee;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 40px auto;
+  height: 600px;
+ }
+
+ .hero-text{
+  flex: 1;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+ }
+
+ .hero-text h1{
+  font-size: 3.6rem;
+  margin-bottom: 15px;
+ }
+
+ .hero-text p{
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+ }
+
+ .about-link{
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #f68b1e;
+  color:white;
+  text-decoration:none;
+  font-weight: 600;
+  border-radius: 25px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+ }
+
+ .about-link:hover{
+  background-color: #d6761a;
+ }
+
+ .hero-image{
+  flex: 1 1 auto;
+  overflow: hidden;
+ }
+
+ .hero-image img{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+ }
