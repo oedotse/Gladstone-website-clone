@@ -656,3 +656,52 @@ main h3{
     font-weight: 600;
     text-decoration: none;
 }
+
+/* resume page design*/
+.resume-page{
+  max-width: 900px;
+  margin: 80px auto;
+  padding:0 20px;
+}
+
+.resume-page h1{
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.resume-page h2{
+  font-size: 1.3rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.resume-page h3{
+  font-size: 1.3rem;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.resume-page h4{
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600px;
+}
+
+.resume-page p{
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.resume-page ul{
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.resume-page ul li{
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
