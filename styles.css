@@ -26,7 +26,7 @@ body {
   width: 100%;
   max-width: 1200px; /* controls content width */
   margin: 0 auto;    /* centers horizontally */
-  background: #ffffff; /* white card */
+  background: #f8f8f8; /* white card */
   border-radius: 12px; /* fixed syntax */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06); /* subtle shadow */
   padding: 40px 60px; /* inside spacing */
@@ -38,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  bottom: 1px solid #ddd;
+  bottom: 1px solid #f8f8f8;
  }
 
  /* left slogan*/
@@ -71,7 +71,7 @@ body {
  }
 
  .header-center ul li a:hover {
-  color: #f68b1e;
+  color: #D4AF37;
  }
 
  /* right links*/
@@ -90,7 +90,7 @@ body {
 
  .header-right ul li a{
   text-decoration: none;
-  color:#f68b1e;
+  color:#008080;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s ease;
  }
@@ -99,7 +99,7 @@ body {
  .header-right ul li:last-child a {
   padding: 8px 15px;
   border-radius: 15px;
-  background-color: #f68b1e;
+  background-color: #008080;
   color:white;
   text-decoration:none;
   font-weight: 600;
