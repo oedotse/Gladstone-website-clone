@@ -12,6 +12,7 @@ html {
   font-size: 16px;
   font-family: 'Georgia', serif;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 /* Beige background for whole page */
@@ -21,15 +22,16 @@ body {
   padding: 0;
 }
 
-/* Content wrapper - white card */
+/* Content wrapper */
 .main-wrapper {
   width: 100%;
-  max-width: 1200px; /* controls content width */
-  margin: 0 auto;    /* centers horizontally */
-  background: #f8f8f8; /* white card */
-  border-radius: 12px; /* fixed syntax */
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06); /* subtle shadow */
-  padding: 40px 60px; /* inside spacing */
+  max-width: 1200px; 
+  margin: 0 auto;    
+  background: #f8f8f8; 
+  border-radius: 12px; 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+ 
+  padding: 20px 60px; 
 }
  
  /* css for the headers on each page */
@@ -37,7 +39,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  /* tighten vertical padding to reduce space above header */
+  padding: 10px 0;
   bottom: 1px solid #f8f8f8;
  }
 
@@ -100,7 +103,7 @@ body {
   padding: 8px 15px;
   border-radius: 15px;
   background-color: #008080;
-  color:white;
+  color:#f8f8f8;
   text-decoration:none;
   font-weight: 600;
   border-radius: 25px;
@@ -160,7 +163,7 @@ body {
  .social-links a[href*="html"] {
   display: inline-block;
   margin-top: 20px;
-  color:#ffffff;
+  color:#f8f8f8;
   text-decoration:none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -173,12 +176,12 @@ body {
  .footer-bottom p {
   margin: 6px 0;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: #f8f8f8;
  }
 
  .footer-bottom h3{
   font-weight:bold;
-  color:#ffffff;
+  color: #f8f8f8;;
   margin-top: 15px;
  }
 
@@ -200,7 +203,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #ffffff;
+  color: #f8f8f8;
   font-family: 'Georgia', serif;
  }
 
@@ -274,7 +277,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #ffffff;
+    background: #f8f8f8;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -305,7 +308,7 @@ body {
     display: none;
     padding: 25px 20px;
     border-radius: 10px;
-    background: #ffffff;
+    background: #f8f8f8;
     height: 100%;
 }
 
@@ -322,7 +325,7 @@ body {
 }
 
 .read-more-link {
-    color: #8B5E34;
+    color: #D4AF37;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 600;
@@ -364,9 +367,7 @@ body {
 .indicator.active {
     background: #8B5E34;
 }
-.carousel-slide:first-child {
-    display: block;
-}
+
 
 /* expertise section*/
 .expertise-section{
@@ -560,12 +561,12 @@ body {
   .contact-form input[type="tel"]:focus,
   .contact-form textarea:focus {
     outline: none;
-    border-color: #007BFF;
+    border-color: #008080;
     box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
   }
 
   .submit-button {
-    background-color: #007BFF;
+    background-color: #008080;
     color: white;
     padding: 0.85rem 2rem;
     border: none;
@@ -577,7 +578,7 @@ body {
   }
 
   .submit-button:hover {
-    background-color: #0056b3;
+    background-color: #008080;
   }
 
   /* blog post design*/
@@ -704,4 +705,54 @@ main h3{
 .resume-page ul li{
   margin-bottom: 10px;
   line-height: 1.6;
+}
+
+/* subscribe button*/
+/* POPUP BACKDROP */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* POPUP BOX */
+.modal-content {
+    background: #fff;
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* FORM ELEMENTS */
+#subscribe-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#subscribe-form button {
+    width: 100%;
+    padding: 12px;
+    background: #008080;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }

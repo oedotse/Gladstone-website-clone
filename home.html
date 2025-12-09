@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,7 +25,7 @@
 
             <div class="header-right">
                 <ul>
-                    <li><a href="#">Subscribe</a></li>
+                    <li><a id="open-subscribe" href="javascript:void(0)">Subscribe</a></li>
                     <li><a href="contact.html">Work with me</a></li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
         </section>
 
         <section class="expertise-section">
-            <!--expertise and experience--> 
+            <!--expertise and experience-->
             <h2 class="expertise-text">Expertise and Experience in</h2>
 
             <!--three major areas-->
@@ -112,13 +112,13 @@
                                 </div>
                             </div>
                             <!--carousel indicators that show which slide you are on-->
-            <div class="carousel-indicators">
-                <button class="indicator " data-index="0"></button>
-                <button class="indicator " data-index="1"></button>
-                <button class="indicator " data-index="2"></button>
-                <button class="indicator " data-index="3"></button>
+                            <div class="carousel-indicators">
+                                <button class="indicator " data-index="0"></button>
+                                <button class="indicator " data-index="1"></button>
+                                <button class="indicator " data-index="2"></button>
+                                <button class="indicator " data-index="3"></button>
 
-            </div>
+                            </div>
 
                             <button class="carousel-arrow"> > </button>
                 </div>
@@ -127,7 +127,7 @@
                     <img src="hero-image2.jpg" alt="approach illustration" class="static-image">
                 </div>
             </div>
-            
+
 
         </section>
         <!--blogs section-->
@@ -176,6 +176,22 @@
             <h3> Subscibe to stay updated</h3>
         </div>
     </footer>
+    <!-- ===== SUBSCRIBE POPUP MODAL ===== -->
+    <div id="subscribe-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-subscribe" class="close-btn">&times;</span>
+
+            <h2>Subscribe for Updates</h2>
+
+            <form id="subscribe-form">
+                <input type="email" id="subscribe-email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <p class="small-note">You will receive newsletters and blog updates.</p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
